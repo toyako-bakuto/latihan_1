@@ -11,6 +11,7 @@
         <p>"Secangkir cerita di setiap sore."</p>
         <nav>
             <a href="#beranda">Beranda</a>
+            <a href="#reservasi">Reservasi</a>
             <a href="#tentang">Tentang Kami</a>
             <a href="#galeri">Galeri</a>
             <a href="#menu">Menu</a>
@@ -23,6 +24,44 @@
         <section id="beranda">
             <h2>Selamat Datang di Kopi Senja</h2>
             <p>Nikmati kopi pilihan dan suasana nyaman untuk menemani hari Anda.</p>
+        </section>
+
+        <section id="reservasi">
+            <h2>Reservasi Meja</h2>
+            <form>
+                <label for="nama-reservasi">Nama:</label>
+                <input type="text" name="nama" id="nama-reservasi" required>
+
+                <label for="email-reservasi">Email:</label>
+                <input type="email" name="email" id="email-reservasi" required>
+
+                <label for="tanggal">Tanggal:</label>
+                <input type="date" name="tanggal" id="tanggal" required>
+
+                <label for="waktu">Jam:</label>
+                <input type="time" name="waktu" id="waktu" required>
+
+                <label for="jumlah">Jumlah:</label>
+                <select name="jumlah" id="jumlah" required>
+                    <option value="1">1 Orang</option>
+                    <option value="2">2 Orang</option>
+                    <option value="3">3 Orang</option>
+                    <option value="4">4 Orang</option>
+                    <option value="5">5 Orang</option>
+                    <option value="6">6 Orang</option>
+                </select>
+
+                <label for="area">Area:</label>
+                <select name="area" id="area" required>
+                    <option value="indoor">Indoor</option>
+                    <option value="outdoor">Outdoor</option>
+                </select>
+
+                <label for="catatan">Catatan Tambahan</label>
+                <textarea name="catatan" id="catatan"></textarea>
+
+                <button type="submit">Reservasi Sekarang</button>
+            </form>
         </section>
 
         <section id="tentang">
@@ -105,11 +144,11 @@
             <a href="https://instagram.com">@kopisenja</a>
 
             <form>
-                <label for="nama">Nama*:</label>
-                <input type="text" name="nama" id="nama" required>
+                <label for="nama-kontak">Nama*:</label>
+                <input type="text" name="nama" id="nama-kontak" required>
 
-                <label for="email">Email*:</label>
-                <input type="email" name="email" id="email" required>
+                <label for="email-kontak">Email*:</label>
+                <input type="email" name="email" id="email-kontak" required>
 
                 <label for="nomor_telepon">Nomor Telepon:</label>
                 <input type="tel" name="nomor_telepon" id="nomor_telepon">
