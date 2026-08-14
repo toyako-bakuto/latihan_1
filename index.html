@@ -29,7 +29,7 @@
         <section id="reservasi">
             <h2>Reservasi Meja</h2>
             <p>* Wajib diisi</p>
-            <form>
+            <form action="/reservasi" method="post">
                 <label for="nama-reservasi">Nama:</label>
                 <input type="text" name="nama" id="nama-reservasi" minlength="3" placeholder="Jonathan Anandar" required>
 
@@ -52,6 +52,15 @@
                     <option value="6">6 Orang</option>
                 </select>
 
+                <fieldset>
+                    <legend>Menu</legend>
+                    <input type="checkbox" name="menu" id="kopi-susu" value="kopi-susu"> <label for="kopi-susu">Kopi Susu Senja</label>
+                    <input type="checkbox" name="menu" id="americano" value="americano"> <label for="americano">Americano</label>
+                    <input type="checkbox" name="menu" id="cappuccino" value="cappuccino"> <label for="cappuccino">Cappuccino</label>
+                    <input type="checkbox" name="menu" id="matcha" value="matcha"> <label for="matcha">Matcha Latte</label>
+                    <input type="checkbox" name="menu" id="chocolate" value="chocolate"> <label for="chocolate">Chocolate</label>
+                </fieldset>
+
                 <label for="area">Area:</label>
                 <select name="area" id="area" required>
                     <option value="indoor">Indoor</option>
@@ -61,6 +70,13 @@
                 <label for="catatan">Catatan Tambahan</label>
                 <textarea name="catatan" id="catatan" minlength="10" placeholder="Saya ingin meja dekat jendela."></textarea>
 
+                <fieldset>
+                    <legend>Bayar</legend>
+                    <input type="radio" name="bayar" id="qris" value="qris"><label for="qris">Qris</label>
+                    <input type="radio" name="bayar" id="tunai" value="tunai"><label for="tunai">Tunai</label>
+                    <input type="radio" name="bayar" id="debit" value="debit"><label for="debit">Debit</label>
+                </fieldset>
+                
                 <button type="submit">Reservasi Sekarang</button>
             </form>
         </section>
