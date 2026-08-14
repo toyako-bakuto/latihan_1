@@ -30,13 +30,13 @@
             <h2>Reservasi Meja</h2>
             <form>
                 <label for="nama-reservasi">Nama:</label>
-                <input type="text" name="nama" id="nama-reservasi" required>
+                <input type="text" name="nama" id="nama-reservasi" minlength="3" required>
 
                 <label for="email-reservasi">Email:</label>
                 <input type="email" name="email" id="email-reservasi" required>
 
                 <label for="tanggal">Tanggal:</label>
-                <input type="date" name="tanggal" id="tanggal" required>
+                <input type="date" name="tanggal" id="tanggal" min="2026-08-14" required>
 
                 <label for="waktu">Jam:</label>
                 <input type="time" name="waktu" id="waktu" required>
@@ -58,7 +58,7 @@
                 </select>
 
                 <label for="catatan">Catatan Tambahan</label>
-                <textarea name="catatan" id="catatan"></textarea>
+                <textarea name="catatan" id="catatan" minlength="10"></textarea>
 
                 <button type="submit">Reservasi Sekarang</button>
             </form>
@@ -145,7 +145,7 @@
 
             <form>
                 <label for="nama-kontak">Nama*:</label>
-                <input type="text" name="nama" id="nama-kontak" required>
+                <input type="text" name="nama" id="nama-kontak" minlength="3" required>
 
                 <label for="email-kontak">Email*:</label>
                 <input type="email" name="email" id="email-kontak" required>
@@ -157,7 +157,7 @@
                 <input type="text" name="subjek" id="subjek" required>
 
                 <label for="pesan">Pesan*:</label>
-                <textarea name="pesan" id="pesan" required></textarea>
+                <textarea name="pesan" id="pesan" required minlength="10"></textarea>
 
                 <button type="submit">Kirim Pesan</button>
             </form>
