@@ -28,12 +28,13 @@
 
         <section id="reservasi">
             <h2>Reservasi Meja</h2>
+            <p>* Wajib diisi</p>
             <form>
                 <label for="nama-reservasi">Nama:</label>
-                <input type="text" name="nama" id="nama-reservasi" minlength="3" required>
+                <input type="text" name="nama" id="nama-reservasi" minlength="3" placeholder="Jonathan Anandar" required>
 
                 <label for="email-reservasi">Email:</label>
-                <input type="email" name="email" id="email-reservasi" required>
+                <input type="email" name="email" id="email-reservasi" placeholder="jonathan@home.com" required>
 
                 <label for="tanggal">Tanggal:</label>
                 <input type="date" name="tanggal" id="tanggal" min="2026-08-14" required>
@@ -58,7 +59,7 @@
                 </select>
 
                 <label for="catatan">Catatan Tambahan</label>
-                <textarea name="catatan" id="catatan" minlength="10"></textarea>
+                <textarea name="catatan" id="catatan" minlength="10" placeholder="Saya ingin meja dekat jendela."></textarea>
 
                 <button type="submit">Reservasi Sekarang</button>
             </form>
@@ -143,21 +144,22 @@
             <a href="mailto:halo@kopisenja.example">halo@kopisenja.example</a>
             <a href="https://instagram.com">@kopisenja</a>
 
+            <p>* Wajib diisi</p>
             <form>
                 <label for="nama-kontak">Nama*:</label>
-                <input type="text" name="nama" id="nama-kontak" minlength="3" required>
+                <input type="text" name="nama" id="nama-kontak" minlength="3" placeholder="Jonathan Anandar" required>
 
                 <label for="email-kontak">Email*:</label>
-                <input type="email" name="email" id="email-kontak" required>
+                <input type="email" name="email" id="email-kontak" placeholder="jonathan@home.com" required>
 
                 <label for="nomor_telepon">Nomor Telepon:</label>
-                <input type="tel" name="nomor_telepon" id="nomor_telepon">
+                <input type="tel" name="nomor_telepon" id="nomor_telepon" placeholder="0891234567890">
 
                 <label for="subjek">Subjek*:</label>
-                <input type="text" name="subjek" id="subjek" required>
+                <input type="text" name="subjek" id="subjek" placeholder="Pertanyaan tentang menu" required>
 
                 <label for="pesan">Pesan*:</label>
-                <textarea name="pesan" id="pesan" required minlength="10"></textarea>
+                <textarea name="pesan" id="pesan" required minlength="10" placeholder="Apakah tersedia tempat untuk 10 orang?"></textarea>
 
                 <button type="submit">Kirim Pesan</button>
             </form>
